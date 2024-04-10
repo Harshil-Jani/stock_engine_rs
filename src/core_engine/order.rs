@@ -1,10 +1,12 @@
 use rust_decimal::Decimal;
 
+#[derive(Clone)]
 pub enum BuyOrSell {
     Buy,
     Sell,
 }
 
+#[derive(Clone)]
 pub struct Order {
     pub quantity: Decimal,
     pub price: Decimal,
